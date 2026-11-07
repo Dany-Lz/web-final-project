@@ -1,0 +1,172 @@
+/* Cabecera (Título + Botón Nuevo) */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.btn-nuevo {
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.2s;
+}
+
+.btn-nuevo:hover {
+  background-color: var(--color-primario-hover);
+}
+
+/* Contenedor principal de la tabla */
+.tabla-card {
+  background-color: var(--color-blanco);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+/* Barra de búsqueda */
+.tabla-toolbar {
+  padding: 1rem;
+  border-bottom: 1px solid var(--color-borde);
+}
+
+.buscador-container {
+  position: relative;
+  max-width: 400px;
+}
+
+.buscador-icono {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+}
+
+.buscador-input {
+  width: 100%;
+  padding: 10px 10px 10px 40px;
+  border: 1px solid var(--color-borde);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.buscador-input:focus {
+  border-color: var(--color-primario);
+  box-shadow: 0 0 0 3px rgba(234, 88, 12, 0.1);
+}
+
+/* Tabla en sí */
+.tabla-datos {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.tabla-datos thead {
+  background-color: var(--color-sidebar);
+  color: var(--color-blanco);
+}
+
+.tabla-datos th {
+  padding: 1rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.tabla-datos td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--color-borde);
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+.tabla-datos tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+.text-center { text-align: center; }
+.font-bold { font-weight: 600; color: #1e293b; }
+
+/* Etiqueta de categoría */
+.badge {
+  background-color: #f1f5f9;
+  color: #475569;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Botones de Acciones */
+.acciones {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.btn-accion {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.btn-accion:hover { background-color: #f3f4f6; }
+.btn-ver { color: #3b82f6; }
+.btn-editar { color: #f59e0b; }
+.btn-eliminar { color: #ef4444; }
+
+/* Paginación */
+.paginacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-top: 1px solid var(--color-borde);
+  font-size: 0.9rem;
+  color: var(--color-texto-suave);
+}
+
+.paginacion-botones {
+  display: flex;
+  gap: 5px;
+}
+
+.btn-pagina {
+  padding: 6px 12px;
+  border: 1px solid var(--color-borde);
+  background: var(--color-blanco);
+  border-radius: 6px;
+  cursor: pointer;
+  color: #374151;
+}
+
+.btn-pagina:hover { background-color: #f3f4f6; }
+
+.btn-pagina--activo {
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  border-color: var(--color-primario);
+}
