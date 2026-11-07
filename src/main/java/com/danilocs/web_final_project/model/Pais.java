@@ -18,6 +18,11 @@ public class Pais {
     public Pais() {
     }
 
+    public Pais(String id, String nombre) {
+        this.id = id;
+        this.nombre = nombre;
+    }
+    
     public String getId() {
         return id;
     }
